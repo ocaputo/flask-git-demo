@@ -5,14 +5,13 @@ from datetime import datetime
 
 app = Flask(__name__)
 
-<<<<<<< HEAD
+
 def calculate_age(dob):
     today = datetime.today()
     birth_date = datetime.strptime(dob, "%Y-%m-%d")
     age = today.year - birth_date.year - ((today.month, today.day) < (birth_date.month, birth_date.day))
     return age
-=======
->>>>>>> c09922200075b6404dfd67d870b1bf8cae88ed95
+
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
